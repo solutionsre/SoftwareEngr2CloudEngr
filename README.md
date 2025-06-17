@@ -108,3 +108,6 @@ Welcome! This is your **step-by-step 6-month plan** to transition from a Softwar
 - Hands-on projects > Certifications > Theory
 
 You're not starting from scratch — you're building on your **SWE foundation**. Now think in **cloud systems**.
+
+> 🌤️ Built by: [YourName] | Inspired by real-world DomainXHunt roadmaps  
+> ✨ Credits: [Vaibhav Sadhwani](https://www.linkedin.com/in/vsadhwani/)
