@@ -1,47 +1,50 @@
-# 🚀 Cloud Portfolio: Serverless App with CI/CD & Monitoring
+# 🌐 Cloud Portfolio: Full Serverless Project (Lambda + API Gateway + DynamoDB + Monitoring)
 
 ## 📁 Folder Structure
 
 ```
 .
-├── app/                  # Lambda function code
-│   └── main.py
-├── infrastructure/       # Terraform configurations
-│   └── main.tf
-├── .github/
-│   └── workflows/
-│       └── deploy.yml    # GitHub Actions CI/CD pipeline
-├── monitoring/           # Monitoring configs (Grafana/Prometheus)
-│   └── config.txt
+├── app/                    # Lambda source code
+├── infrastructure/         # Terraform IaC setup
+├── .github/workflows/      # GitHub Actions CI/CD
+├── monitoring/             # Prometheus + Grafana setup
+├── screenshots/            # Add deployment & dashboard screenshots
 └── README.md
 ```
 
-## 🛠️ Technologies
-- AWS Lambda (Python)
-- Terraform (Infrastructure as Code)
+## 🛠️ Stack
+- AWS Lambda + API Gateway + DynamoDB
+- Terraform
 - GitHub Actions (CI/CD)
-- Prometheus + Grafana (Monitoring - placeholder)
-- IAM Roles & Secrets Management
+- Prometheus & Grafana (for monitoring)
 
-## 🚀 Deployment
+## 🚀 Quickstart
 
-### Terraform
+### 1. Build Lambda Deployment Package
+```bash
+cd app
+chmod +x build.sh
+./build.sh
+```
 
+### 2. Deploy with Terraform
 ```bash
 cd infrastructure
 terraform init
 terraform apply
 ```
 
-### GitHub Actions
+### 3. API Endpoint
+After deployment, Terraform will output your API Gateway endpoint.
 
-- Triggered automatically on changes to `infrastructure/`
-- Applies Terraform to deploy Lambda
+### 4. Monitor
+Monitoring configs are under `/monitoring`. Setup in EC2 or Docker environment.
 
-### Monitoring
-
-- Monitoring config placeholders for Prometheus and Grafana.
-- Customize based on Prometheus operator or EC2-based agents.
+## 📷 Screenshots
+Add your screenshots of:
+- Lambda function deployed
+- API Gateway endpoint test
+- Monitoring dashboards
 
 ## ✨ Credits
-Built for cloud engineer portfolio — inspired by [Vaibhav Sadhwani](https://linkedin.com/in/vsadhwani/)
+Inspired by: [Vaibhav Sadhwani](https://linkedin.com/in/vsadhwani/)
